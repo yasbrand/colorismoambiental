@@ -65,10 +65,10 @@ select {
 }
 // End of CSS Reset -------------------------------------------------------
 
-$clr-cyan: hsl(171, 66%, 44%);
-$clr-dark-cyan: #259d89;
-$clr-blue: hsl(233, 100%, 69%);
-$clr-dark-blue: #5063da;
+$clr-orange: #d8724c;
+$clr-dark-orange: #d36036;
+$clr-purple: #7a89cb;
+$clr-dark-purple: #6b7cc9;
 $clr-dark-gray: hsl(210, 10%, 33%);
 $clr-gray: hsl(201, 11%, 66%);
 $clr-white: #ffffff;
@@ -202,28 +202,28 @@ footer {
     
     .btn--cyan {
         @extend %btn;
-        @include btn($clr-cyan, $clr-dark-cyan, $clr-cyan);
+        @include btn($clr-orange, $clr-dark-orange, $clr-orange);
         transition: all 0.125s;
         
         &:hover {
             cursor: pointer;
-            background-color: #5dcbba;
-            border-bottom: 0.36rem solid #56b5a5;
-            box-shadow: $clr-dark-cyan 0px 10px 20px -10px;
+            background-color: #d36036;
+            border-bottom: 0.36rem solid #d45324;
+            box-shadow: $clr-dark-orange 0px 10px 20px -10px;
             transform: scale(1.025);
         }
     }
     
     .btn--blue {
         @extend %btn;
-        @include btn($clr-blue, $clr-dark-blue, $clr-blue);
+        @include btn($clr-purple, $clr-dark-purple, $clr-purple);
         transition: all 0.125s;
         
         &:hover {
             cursor: pointer;
-            background-color: #8795ff;
-            border-bottom: 0.36rem solid #7c85e1;
-            box-shadow: $clr-dark-blue 0px 10px 20px -10px;
+            background-color: #6b7cc9;
+            border-bottom: 0.36rem solid rgb(89, 100, 212);
+            box-shadow: $clr-dark-purple 0px 10px 20px -10px;
             transform: scale(1.025);
         }
     }
@@ -377,7 +377,7 @@ footer {
             display: inline-block;
             &:hover {
                 cursor: pointer;
-                color: $clr-cyan;
+                color: $clr-orange;
                 text-shadow: rgba(0,0,0,0.2) 1px 1px 2px;
                 transform: scale(1.025);
             }
@@ -398,29 +398,13 @@ footer {
         
         i:hover {
             cursor: pointer;
-            color: $clr-cyan;
+            color: $clr-orange;
             text-shadow: rgba(0,0,0,0.2) 1px 1px 2px;
             transform: scale(1.05);
         }
     }    
 }
 
-.attribution {
-    font-size: 1.1rem;
-    color: $clr-cyan;
-    
-    a {
-        font-size: 1.1rem;
-        color: $clr-dark-cyan;
-        font-weight: $fw-bold;
-        text-decoration: none;
-
-        &:hover {
-            color: $clr-blue;
-            cursor: pointer;
-        }
-    }
-}
 
 @media (min-width: 33em) {
     .desc {
@@ -484,11 +468,11 @@ footer {
         }
     
         .btn--cyan {
-            @include btn($clr-cyan, $clr-dark-cyan, $clr-cyan);
+            @include btn($clr-orange, $clr-dark-orange, $clr-orange);
         }
         
         .btn--blue {
-            @include btn($clr-blue, $clr-dark-blue, $clr-blue);
+            @include btn($clr-purple, $clr-dark-purple, $clr-purple);
         }
     }
 
