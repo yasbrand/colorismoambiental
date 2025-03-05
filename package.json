@@ -4,11 +4,11 @@
   "description": "Landing Page",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "sass sass/main.scss css/style.css --watch"
   },
   "author": "Anosha Ahmed",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^7.0.1"
+  "devDependencies": {
+    "sass": "^1.85.1"
   }
 }
